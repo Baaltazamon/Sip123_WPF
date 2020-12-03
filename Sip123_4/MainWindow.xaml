@@ -14,7 +14,7 @@
     </Window.Background>
     <Grid>
         <TextBox x:Name="tbText" HorizontalAlignment="Left" Height="23" Margin="346,286,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label x:Name="lText" Content="Label" HorizontalAlignment="Left" Margin="339,244,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lText" Content="Label" HorizontalAlignment="Left" Margin="385,309,0,0" VerticalAlignment="Top"/>
         <Image HorizontalAlignment="Left" Height="71" Margin="28,223,0,0" VerticalAlignment="Top" Width="123" Source="wordpresslogo.gif"/>
         <ComboBox x:Name="cbNumbers" HorizontalAlignment="Left" Margin="570,315,0,0" VerticalAlignment="Top" Width="120" SelectedIndex="0"/>
         <TabControl Margin="0,0,0,210">
@@ -25,7 +25,7 @@
                 <Grid Background="#FFE5E5E5"/>
             </TabItem>
         </TabControl>
-        <Button HorizontalAlignment="Left" Margin="419,240,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click">
+        <Button HorizontalAlignment="Left" Margin="366,338,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click">
             <Label Content="Press me!"/>
         </Button>
 
