@@ -5,29 +5,30 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Sip123_4"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" Visibility="Visible">
-    <Window.Background>
-        <RadialGradientBrush>
-            <GradientStop Color="White" Offset="1"/>
-            <GradientStop Color="#FFEA5BEA"/>
-        </RadialGradientBrush>
-    </Window.Background>
+        Title="MainWindow" Height="423" Width="319" Visibility="Visible" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None">
+
     <Grid>
-        <TextBox x:Name="tbText" HorizontalAlignment="Left" Height="23" Margin="346,286,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label x:Name="lText" Content="Label" HorizontalAlignment="Left" Margin="385,309,0,0" VerticalAlignment="Top"/>
-        <Image HorizontalAlignment="Left" Height="71" Margin="28,223,0,0" VerticalAlignment="Top" Width="123" Source="wordpresslogo.gif"/>
-        <ComboBox x:Name="cbNumbers" HorizontalAlignment="Left" Margin="570,315,0,0" VerticalAlignment="Top" Width="120" SelectedIndex="0"/>
-        <TabControl Margin="0,0,0,210">
-            <TabItem Header="TabItem">
-                <Grid Background="#FFE5E5E5"/>
-            </TabItem>
-            <TabItem Header="TabItem">
-                <Grid Background="#FFE5E5E5"/>
-            </TabItem>
-        </TabControl>
-        <Button HorizontalAlignment="Left" Margin="366,338,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click">
-            <Label Content="Press me!"/>
+        <Grid Height="27" VerticalAlignment="Top" Background="#FF8B01FF" MouseLeftButtonDown="Grid_MouseLeftButtonDown">
+            <Image Height="25" Width="25" HorizontalAlignment="Left" Source="Image/icons8_design.ico"></Image>
+            <Label Content="ICalc" FontSize="14" FontFamily="Old English Text MT" Margin="27,0,239,0" Width="50" Foreground="White"/>
+            <Button Height="27" Width="27" Margin="292,0,0,0" Click="Button_Click">
+                <Image Source="Image/icons8_multiply.ico"/>
+            </Button>
+            <Button Height="27" Width="27" Margin="265,0,27,0" Click="Button_Click_1">
+                <Image Source="Image/icons8_minus.ico"/>
+            </Button>
+        </Grid>
+        <TextBox x:Name="tbFN" HorizontalAlignment="Left" Height="52" Margin="58,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196" FontSize="36" PreviewTextInput="tbFN_PreviewTextInput"/>
+        <TextBox x:Name="tbSN" HorizontalAlignment="Left" Height="52" Margin="58,212,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196" FontSize="36" PreviewTextInput="tbFN_PreviewTextInput"/>
+        <Label Content="Напряжение (U)" HorizontalAlignment="Left" Margin="25,50,0,0" VerticalAlignment="Top" FontSize="36"/>
+        <Label Content="Сопративление (R)" HorizontalAlignment="Left" Margin="0,154,0,0" VerticalAlignment="Top" FontSize="36"/>
+        <Label x:Name="lResult" Content="Результат" HorizontalAlignment="Left" Margin="10,269,0,0" VerticalAlignment="Top" FontSize="36"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="108,338,0,0" VerticalAlignment="Top" Width="78" RenderTransformOrigin="0.513,-0.1" Height="37" Click="Button_Click_2">
+            <Button.Background>
+                <ImageBrush ImageSource="Image/icons8_davinci_resolve_1.ico"/>
+            </Button.Background>
         </Button>
+
 
     </Grid>
 </Window>

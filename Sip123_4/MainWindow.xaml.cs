@@ -23,13 +23,32 @@ namespace Sip123_4
         public MainWindow()
         {
             InitializeComponent();
-            for (int i = 1; i <= 100; i++)
-                cbNumbers.Items.Add(i);
+            
+        }
+
+        private void Grid_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            DragMove();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            cbNumbers.SelectedIndex = int.Parse(tbText.Text)-1;
+            Close();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            this.WindowState = WindowState.Minimized;
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            lResult.Content = "Результат — " + (double.Parse(tbFN.Text) / double.Parse(tbSN.Text));
+        }
+
+        private void tbFN_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            e.Handled = "1234567890,".IndexOf(e.Text) < 0;
         }
     }
 }

@@ -97,5 +97,16 @@
   <ItemGroup>
     <Resource Include="wordpresslogo.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\icons8_critical_thinking.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\icons8_design.ico" />
+    <Resource Include="Image\icons8_minus.ico" />
+    <Resource Include="Image\icons8_multiply.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\icons8_davinci_resolve_1.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
