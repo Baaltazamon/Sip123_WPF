@@ -5,30 +5,32 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Sip123_4"
         mc:Ignorable="d"
-        Title="MainWindow" Height="423" Width="319" Visibility="Visible" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None">
+        Title="MainWindow" Height="368.333" Width="265" Visibility="Visible" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None">
 
     <Grid>
         <Grid Height="27" VerticalAlignment="Top" Background="#FF8B01FF" MouseLeftButtonDown="Grid_MouseLeftButtonDown">
             <Image Height="25" Width="25" HorizontalAlignment="Left" Source="Image/icons8_design.ico"></Image>
             <Label Content="ICalc" FontSize="14" FontFamily="Old English Text MT" Margin="27,0,239,0" Width="50" Foreground="White"/>
-            <Button Height="27" Width="27" Margin="292,0,0,0" Click="Button_Click">
+            <Button Height="27" Width="27" Margin="238,0,0,0" Click="Button_Click">
                 <Image Source="Image/icons8_multiply.ico"/>
             </Button>
-            <Button Height="27" Width="27" Margin="265,0,27,0" Click="Button_Click_1">
+            <Button Height="27" Width="27" Margin="211,0,27,0" Click="Button_Click_1">
                 <Image Source="Image/icons8_minus.ico"/>
             </Button>
         </Grid>
-        <TextBox x:Name="tbFN" HorizontalAlignment="Left" Height="52" Margin="58,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196" FontSize="36" PreviewTextInput="tbFN_PreviewTextInput"/>
-        <TextBox x:Name="tbSN" HorizontalAlignment="Left" Height="52" Margin="58,212,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196" FontSize="36" PreviewTextInput="tbFN_PreviewTextInput"/>
-        <Label Content="Напряжение (U)" HorizontalAlignment="Left" Margin="25,50,0,0" VerticalAlignment="Top" FontSize="36"/>
-        <Label Content="Сопративление (R)" HorizontalAlignment="Left" Margin="0,154,0,0" VerticalAlignment="Top" FontSize="36"/>
-        <Label x:Name="lResult" Content="Результат" HorizontalAlignment="Left" Margin="10,269,0,0" VerticalAlignment="Top" FontSize="36"/>
-        <Button Content="" HorizontalAlignment="Left" Margin="108,338,0,0" VerticalAlignment="Top" Width="78" RenderTransformOrigin="0.513,-0.1" Height="37" Click="Button_Click_2" Style="{DynamicResource ButtonStyle1}">
-            <Button.Background>
-                <ImageBrush ImageSource="Image/icons8_davinci_resolve_1.ico"/>
-            </Button.Background>
-        </Button>
-
+        <TextBox x:Name="tbFN" HorizontalAlignment="Left" Height="23" Margin="67,98,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="133" PreviewTextInput="tbFN_PreviewTextInput"/>
+        <TextBox x:Name="tbSN" HorizontalAlignment="Left" Height="23" Margin="67,154,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="133" PreviewTextInput="tbFN_PreviewTextInput"/>
+        <Label Content="Введите первое число" HorizontalAlignment="Left" Margin="67,72,0,0" VerticalAlignment="Top"/>
+        <Label Content="Введите второе число" HorizontalAlignment="Left" Margin="67,128,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lResult" Content="0" HorizontalAlignment="Right" Margin="0,182,66,0" VerticalAlignment="Top"/>
+        <Button Content="+" HorizontalAlignment="Left" Margin="46,288,0,0" VerticalAlignment="Top" Width="23" Height="23" Click="Button_Click_2"/>
+        <Button Content="-" HorizontalAlignment="Left" Margin="74,288,0,0" VerticalAlignment="Top" Width="23" Height="23" Click="Button_Click_3"/>
+        <Button Content="*" HorizontalAlignment="Left" Margin="102,288,0,0" VerticalAlignment="Top" Width="23" Height="23" Click="Button_Click_4"/>
+        <Button Content="/" HorizontalAlignment="Left" Margin="130,288,0,0" VerticalAlignment="Top" Width="23" Height="23" Click="Button_Click_5"/>
+        <Button Content="%" HorizontalAlignment="Left" Margin="158,288,0,0" VerticalAlignment="Top" Width="23" Height="23" Click="Button_Click_6"/>
+        <Button Content="Sin" HorizontalAlignment="Left" Margin="186,288,0,0" VerticalAlignment="Top" Width="23" Height="23" Click="Button_Click_7"/>
+        <Button Content="C" HorizontalAlignment="Left" Margin="46,316,0,0" VerticalAlignment="Top" Width="51" Height="23" Click="Button_Click_8"/>
+        <Button Content="=" HorizontalAlignment="Left" Margin="158,316,0,0" VerticalAlignment="Top" Width="51" Height="23"/>
 
     </Grid>
 </Window>

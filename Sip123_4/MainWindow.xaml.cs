@@ -41,24 +41,46 @@ namespace Sip123_4
             this.WindowState = WindowState.Minimized;
         }
 
-        private void Button_Click_2(object sender, RoutedEventArgs e)
-        {
-            try
-            {
-                lResult.Content = "Результат — " + (double.Parse(tbFN.Text) / double.Parse(tbSN.Text));
-            }
-            catch (FormatException)
-            {
-                MessageBoxResult result =  MessageBox.Show("Заполните все поля!\nПовторить ввод?", "Ошибка вычисления", MessageBoxButton.YesNo, MessageBoxImage.Error);
-                if (result == MessageBoxResult.No)
-                    Close();
-            }
-            
-        }
-
         private void tbFN_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {
-            e.Handled = "1234567890,".IndexOf(e.Text) < 0;
+            e.Handled = "1234567890,-".IndexOf(e.Text) < 0;
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            lResult.Content = double.Parse(tbFN.Text) + double.Parse(tbSN.Text);
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            lResult.Content = double.Parse(tbFN.Text) - double.Parse(tbSN.Text);
+        }
+
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+            lResult.Content = double.Parse(tbFN.Text) * double.Parse(tbSN.Text);
+        }
+
+        private void Button_Click_5(object sender, RoutedEventArgs e)
+        {
+            lResult.Content = double.Parse(tbFN.Text) / double.Parse(tbSN.Text);
+        }
+
+        private void Button_Click_6(object sender, RoutedEventArgs e)
+        {
+            lResult.Content = double.Parse(tbFN.Text) * double.Parse(tbSN.Text) / 100;
+        }
+
+        private void Button_Click_7(object sender, RoutedEventArgs e)
+        {
+            lResult.Content = Math.Sin(double.Parse(tbFN.Text));
+        }
+
+        private void Button_Click_8(object sender, RoutedEventArgs e)
+        {
+            tbFN.Clear();
+            tbSN.Clear();
+            lResult.Content = "0";
         }
     }
 }
