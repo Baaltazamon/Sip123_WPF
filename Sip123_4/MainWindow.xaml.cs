@@ -43,7 +43,17 @@ namespace Sip123_4
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            lResult.Content = "Результат — " + (double.Parse(tbFN.Text) / double.Parse(tbSN.Text));
+            try
+            {
+                lResult.Content = "Результат — " + (double.Parse(tbFN.Text) / double.Parse(tbSN.Text));
+            }
+            catch (FormatException)
+            {
+                MessageBoxResult result =  MessageBox.Show("Заполните все поля!\nПовторить ввод?", "Ошибка вычисления", MessageBoxButton.YesNo, MessageBoxImage.Error);
+                if (result == MessageBoxResult.No)
+                    Close();
+            }
+            
         }
 
         private void tbFN_PreviewTextInput(object sender, TextCompositionEventArgs e)

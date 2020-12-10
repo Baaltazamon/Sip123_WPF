@@ -23,7 +23,7 @@
         <Label Content="Напряжение (U)" HorizontalAlignment="Left" Margin="25,50,0,0" VerticalAlignment="Top" FontSize="36"/>
         <Label Content="Сопративление (R)" HorizontalAlignment="Left" Margin="0,154,0,0" VerticalAlignment="Top" FontSize="36"/>
         <Label x:Name="lResult" Content="Результат" HorizontalAlignment="Left" Margin="10,269,0,0" VerticalAlignment="Top" FontSize="36"/>
-        <Button Content="" HorizontalAlignment="Left" Margin="108,338,0,0" VerticalAlignment="Top" Width="78" RenderTransformOrigin="0.513,-0.1" Height="37" Click="Button_Click_2">
+        <Button Content="" HorizontalAlignment="Left" Margin="108,338,0,0" VerticalAlignment="Top" Width="78" RenderTransformOrigin="0.513,-0.1" Height="37" Click="Button_Click_2" Style="{DynamicResource ButtonStyle1}">
             <Button.Background>
                 <ImageBrush ImageSource="Image/icons8_davinci_resolve_1.ico"/>
             </Button.Background>
