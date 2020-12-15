@@ -108,5 +108,8 @@
   <ItemGroup>
     <Resource Include="Image\icons8_davinci_resolve_1.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\1212.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

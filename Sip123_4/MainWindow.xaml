@@ -5,32 +5,70 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Sip123_4"
         mc:Ignorable="d"
-        Title="MainWindow" Height="368.333" Width="265" Visibility="Visible" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None">
+        Title="MainWindow" Height="368.333" Width="608.333" Visibility="Visible" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None">
 
     <Grid>
         <Grid Height="27" VerticalAlignment="Top" Background="#FF8B01FF" MouseLeftButtonDown="Grid_MouseLeftButtonDown">
             <Image Height="25" Width="25" HorizontalAlignment="Left" Source="Image/icons8_design.ico"></Image>
-            <Label Content="ICalc" FontSize="14" FontFamily="Old English Text MT" Margin="27,0,239,0" Width="50" Foreground="White"/>
-            <Button Height="27" Width="27" Margin="238,0,0,0" Click="Button_Click">
+            <Label Content="Clicker" FontSize="14" FontFamily="Old English Text MT" Margin="25,-1,508,1" Foreground="White"/>
+            <Button Height="27" Width="27" Margin="556,0,0,0" Click="Button_Click">
                 <Image Source="Image/icons8_multiply.ico"/>
             </Button>
-            <Button Height="27" Width="27" Margin="211,0,27,0" Click="Button_Click_1">
+            <Button Height="27" Width="27" Margin="529,0,27,0" Click="Button_Click_1">
                 <Image Source="Image/icons8_minus.ico"/>
             </Button>
         </Grid>
-        <TextBox x:Name="tbFN" HorizontalAlignment="Left" Height="23" Margin="67,98,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="133" PreviewTextInput="tbFN_PreviewTextInput"/>
-        <TextBox x:Name="tbSN" HorizontalAlignment="Left" Height="23" Margin="67,154,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="133" PreviewTextInput="tbFN_PreviewTextInput"/>
-        <Label Content="Введите первое число" HorizontalAlignment="Left" Margin="67,72,0,0" VerticalAlignment="Top"/>
-        <Label Content="Введите второе число" HorizontalAlignment="Left" Margin="67,128,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lResult" Content="0" HorizontalAlignment="Right" Margin="0,182,66,0" VerticalAlignment="Top"/>
-        <Button Content="+" HorizontalAlignment="Left" Margin="46,288,0,0" VerticalAlignment="Top" Width="23" Height="23" Click="Button_Click_2"/>
-        <Button Content="-" HorizontalAlignment="Left" Margin="74,288,0,0" VerticalAlignment="Top" Width="23" Height="23" Click="Button_Click_3"/>
-        <Button Content="*" HorizontalAlignment="Left" Margin="102,288,0,0" VerticalAlignment="Top" Width="23" Height="23" Click="Button_Click_4"/>
-        <Button Content="/" HorizontalAlignment="Left" Margin="130,288,0,0" VerticalAlignment="Top" Width="23" Height="23" Click="Button_Click_5"/>
-        <Button Content="%" HorizontalAlignment="Left" Margin="158,288,0,0" VerticalAlignment="Top" Width="23" Height="23" Click="Button_Click_6"/>
-        <Button Content="Sin" HorizontalAlignment="Left" Margin="186,288,0,0" VerticalAlignment="Top" Width="23" Height="23" Click="Button_Click_7"/>
-        <Button Content="C" HorizontalAlignment="Left" Margin="46,316,0,0" VerticalAlignment="Top" Width="51" Height="23" Click="Button_Click_8"/>
-        <Button Content="=" HorizontalAlignment="Left" Margin="158,316,0,0" VerticalAlignment="Top" Width="51" Height="23"/>
+        <TabControl Margin="0,27,0,0" Background="#FF1C1CFF">
+            <TabItem Header="Farm" Foreground="#FF5E01FF" FontFamily="Old English Text MT">
+                <Grid>
+                    <Grid.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FFB2A5BD" Offset="1"/>
+                            <GradientStop Color="#FF9B22FF"/>
+                        </LinearGradientBrush>
+                    </Grid.Background>
+                    <Image x:Name="imgCat" HorizontalAlignment="Left" Height="125" Margin="16,32,0,0" VerticalAlignment="Top" Width="223" Source="Image/1212.png" Stretch="Fill" MouseDown="imgCat_MouseDown"/>
+                    <Label x:Name="lPoints" Content="" HorizontalAlignment="Left" Margin="286,45,0,0" VerticalAlignment="Top" FontSize="18"/>
+                    <Label x:Name="lPPC" Content="" HorizontalAlignment="Left" Margin="286,123,0,0" VerticalAlignment="Top" FontSize="18"/>
+                    <Button x:Name="btUp1" Content="Button" HorizontalAlignment="Left" Margin="0,215,0,0" VerticalAlignment="Top" Width="75" Height="25" Click="btUp1_Click"/>
+                    <Button x:Name="btUp2" Content="Button" HorizontalAlignment="Left" Margin="75,215,0,0" VerticalAlignment="Top" Width="75" Height="25" Click="btUp1_Click"/>
+                    <Button x:Name="btUp3" Content="Button" HorizontalAlignment="Left" Margin="0,240,0,0" VerticalAlignment="Top" Width="75" Height="25" Click="btUp1_Click"/>
+                    <Button x:Name="btUp4" Content="Button" HorizontalAlignment="Left" Margin="75,240,0,0" VerticalAlignment="Top" Width="75" Height="25" Click="btUp1_Click"/>
+                    <Button x:Name="btUp5" Content="Button" HorizontalAlignment="Left" Margin="151,215,0,0" VerticalAlignment="Top" Width="75" Height="25" Click="btUp1_Click"/>
+                    <Button x:Name="btUp6" Content="Button" HorizontalAlignment="Left" Margin="226,215,0,0" VerticalAlignment="Top" Width="75" Height="25" Click="btUp1_Click"/>
+                    <Button x:Name="btUp11" Content="Button" HorizontalAlignment="Left" Margin="151,240,0,0" VerticalAlignment="Top" Width="75" Height="25" Click="btUp1_Click"/>
+                    <Button x:Name="btUp12" Content="Button" HorizontalAlignment="Left" Margin="226,240,0,0" VerticalAlignment="Top" Width="75" Height="25" Click="btUp1_Click"/>
+                    <Button x:Name="btUp7" Content="Button" HorizontalAlignment="Left" Margin="301,215,0,0" VerticalAlignment="Top" Width="75" Height="25" Click="btUp1_Click"/>
+                    <Button x:Name="btUp8" Content="Button" HorizontalAlignment="Left" Margin="376,215,0,0" VerticalAlignment="Top" Width="75" Height="25" Click="btUp1_Click"/>
+                    <Button x:Name="btUp13" Content="Button" HorizontalAlignment="Left" Margin="301,240,0,0" VerticalAlignment="Top" Width="75" Height="25" Click="btUp1_Click"/>
+                    <Button x:Name="btUp14" Content="Button" HorizontalAlignment="Left" Margin="376,240,0,0" VerticalAlignment="Top" Width="75" Height="25" Click="btUp1_Click"/>
+                    <Button x:Name="btUp9" Content="Button" HorizontalAlignment="Left" Margin="451,215,0,0" VerticalAlignment="Top" Width="75" Height="25" Click="btUp1_Click"/>
+                    <Button x:Name="btUp10" Content="Button" HorizontalAlignment="Left" Margin="526,215,-24,0" VerticalAlignment="Top" Width="75" Height="25" Click="btUp1_Click"/>
+                    <Button x:Name="btUp15" Content="Button" HorizontalAlignment="Left" Margin="451,240,0,0" VerticalAlignment="Top" Width="75" Height="25" Click="btUp1_Click"/>
+                    <Button x:Name="btUp16" Content="Button" HorizontalAlignment="Left" Margin="526,240,-24,0" VerticalAlignment="Top" Width="75" Height="25" Click="btUp1_Click"/>
+                    <Button x:Name="btUp1_Copy3" Content="Button" HorizontalAlignment="Left" Margin="1,264,0,0" VerticalAlignment="Top" Width="75" Height="25" />
+                    <Button x:Name="btUp2_Copy3" Content="Button" HorizontalAlignment="Left" Margin="76,264,0,0" VerticalAlignment="Top" Width="75" Height="25"/>
+                    <Button x:Name="btUp3_Copy3" Content="Button" HorizontalAlignment="Left" Margin="1,289,0,0" VerticalAlignment="Top" Width="75" Height="25"/>
+                    <Button x:Name="btUp4_Copy3" Content="Button" HorizontalAlignment="Left" Margin="76,289,0,0" VerticalAlignment="Top" Width="75" Height="25"/>
+                    <Button x:Name="btUp1_Copy4" Content="Button" HorizontalAlignment="Left" Margin="152,264,0,0" VerticalAlignment="Top" Width="75" Height="25"/>
+                    <Button x:Name="btUp2_Copy4" Content="Button" HorizontalAlignment="Left" Margin="227,264,0,0" VerticalAlignment="Top" Width="75" Height="25"/>
+                    <Button x:Name="btUp3_Copy4" Content="Button" HorizontalAlignment="Left" Margin="152,289,0,0" VerticalAlignment="Top" Width="75" Height="25"/>
+                    <Button x:Name="btUp4_Copy4" Content="Button" HorizontalAlignment="Left" Margin="227,289,0,0" VerticalAlignment="Top" Width="75" Height="25"/>
+                    <Button x:Name="btUp1_Copy5" Content="Button" HorizontalAlignment="Left" Margin="302,264,0,0" VerticalAlignment="Top" Width="75" Height="25"/>
+                    <Button x:Name="btUp2_Copy5" Content="Button" HorizontalAlignment="Left" Margin="377,264,0,0" VerticalAlignment="Top" Width="75" Height="25"/>
+                    <Button x:Name="btUp3_Copy5" Content="Button" HorizontalAlignment="Left" Margin="302,289,0,0" VerticalAlignment="Top" Width="75" Height="25"/>
+                    <Button x:Name="btUp4_Copy5" Content="Button" HorizontalAlignment="Left" Margin="377,289,0,0" VerticalAlignment="Top" Width="75" Height="25"/>
+                    <Button x:Name="btUp1_Copy6" Content="Button" HorizontalAlignment="Left" Margin="452,264,0,0" VerticalAlignment="Top" Width="75" Height="25"/>
+                    <Button x:Name="btUp2_Copy6" Content="Button" HorizontalAlignment="Left" Margin="527,264,0,0" VerticalAlignment="Top" Width="75" Height="25"/>
+                    <Button x:Name="btUp3_Copy6" Content="Button" HorizontalAlignment="Left" Margin="452,289,0,0" VerticalAlignment="Top" Width="75" Height="25"/>
+                    <Button x:Name="btUp4_Copy6" Content="Button" HorizontalAlignment="Left" Margin="527,289,0,0" VerticalAlignment="Top" Width="75" Height="25"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Shop" Foreground="#FF7131DE" FontFamily="Old English Text MT">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+        </TabControl>
+
 
     </Grid>
 </Window>
